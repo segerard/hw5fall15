@@ -23,7 +23,10 @@ Background: movies have been added to database
 
 Scenario: sort movies alphabetically
   # your scenario here
-
+  When I have sorted movies alphabetically
+  Then I should see "Chicken Run" before "Raiders of the Lost Ark"
 Scenario: sort movies in increasing order of release date
   # your scenario here
+  When I have sorted movies in increasing order of release date
+  Then I should see "Raiders of the Lost Ark" before "Aladdin"
 
